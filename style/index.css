@@ -1,0 +1,182 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: "Fredoka One", cursive;
+  text-transform: uppercase;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+.top {
+  position: fixed;
+  right: 2vw;
+  bottom: 1vw;
+  cursor: pointer;
+}
+.top span {
+  font-size: 5vw;
+}
+
+nav ul li a span {
+  font-family: "Fredoka One", cursive;
+  font-size: 18px;
+  padding-left: 20px;
+  display: block;
+  transform: translateY(-3px);
+  text-transform: uppercase;
+}
+
+section .page {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 200px 1fr 10vw;
+}
+section .page .page-right {
+  grid-column: 3/4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section .page .page-right .sub-title {
+  font-family: "Fugaz One", cursive;
+  text-transform: uppercase;
+  font-size: 130px;
+  transform: rotate(90deg) translate(2.5vw, 0);
+  -webkit-text-decoration: underline 10px #fff;
+          text-decoration: underline 10px #fff;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px;
+}
+section .page .page-mid {
+  grid-column: 2/3;
+  align-self: center;
+  justify-self: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title .main-title {
+  font-family: "Fredoka One", cursive;
+  text-transform: uppercase;
+  font-size: 180px;
+}
+
+.portfolio .page .page-mid {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+.portfolio .page .page-mid .view {
+  border: 2px solid #ddd;
+  width: 66.6667vw;
+  height: 37.5vw;
+}
+.portfolio .page .page-mid .view-link li {
+  padding: 20px 10px;
+}
+.portfolio .page .page-mid .view-link li a {
+  padding: 10px;
+  font-size: 20px;
+}
+.portfolio .page .page-mid .view-link li a:hover {
+  border-bottom: 3px solid #ffc01d;
+}
+
+.skills .page .page-mid {
+  margin: 0 50px;
+  display: grid;
+  grid-template: 1fr 1fr/1fr 1fr;
+  gap: 2vw;
+}
+.skills .page .page-mid .skill-card {
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #000;
+  padding: 30px 50px;
+  position: relative;
+}
+.skills .page .page-mid .skill-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 400;
+  border-radius: 20px 0 0 0;
+  border-top: 40px solid #000;
+  border-left: 160px solid #000;
+  border-right: 160px solid transparent;
+  border-bottom: 40px solid transparent;
+}
+.skills .page .page-mid .skill-card h4 {
+  position: relative;
+  z-index: 500;
+  font-family: "Fugaz One", cursive;
+  font-size: 60px;
+  text-align: right;
+  color: #ffc01d;
+  -webkit-text-stroke: 2px #000;
+  padding-bottom: 10px;
+}
+.skills .page .page-mid .skill-card ul {
+  list-style: disc;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.contact .page .page-mid {
+  position: relative;
+}
+.contact .page .page-mid .contact-bg {
+  -webkit-animation: spin 4s linear infinite;
+          animation: spin 4s linear infinite;
+  width: 26vw;
+  height: 26vw;
+  box-shadow: inset 0 0 50px #fff, inset 20px 0 60px violet, inset -20px 0 60px #0ff, inset 20px 0 300px violet, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 60px violet, 10px 0 60px #0ff;
+  border-radius: 50%;
+}
+.contact .page .page-mid .contact-a {
+  padding: 20px 30px;
+  font-family: "Fugaz One", cursive;
+  font-size: 3vw;
+  -webkit-text-stroke: 1px #000;
+  color: #fff;
+  opacity: 0.4;
+  position: absolute;
+}
+.contact .page .page-mid .contact-a:hover {
+  opacity: 1;
+}
+.contact .page .page-mid .a-mail {
+  top: 25%;
+  left: -40%;
+}
+.contact .page .page-mid .a-git {
+  bottom: 20%;
+  right: -50%;
+}/*# sourceMappingURL=index.css.map */

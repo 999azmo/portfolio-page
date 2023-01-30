@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/pageable@latest/dist/pageable.min.css"
+    /> -->
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,0,0"
+    />
+    <link rel="stylesheet" href="./style/bg.css" />
+    <link rel="stylesheet" href="./style/pageable.css" />
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+  <body>
+    <h1><a href="#">portfolio</a></h1>
+    <!-- go-up -->
+    <div class="top" onclick="pageable.scrollToPage(1)">
+      <span class="material-symbols-rounded"> expand_less </span>
+    </div>
+    <div id="container">
+      <section data-anchor="Page 1" id="page-1" class="pg-page title">
+        <h2 class="main-title">portfolio</h2>
+      </section>
+      <section data-anchor="Page 2" id="page-2" class="pg-page portfolio">
+        <div class="page">
+          <div class="page-mid">
+            <article class="view"></article>
+            <ul class="view-link">
+              <li><a href="#">포트폴리오1</a></li>
+              <li><a href="#">포트폴리오2</a></li>
+              <li><a href="#">포트폴리오3</a></li>
+            </ul>
+          </div>
+          <div class="page-right">
+            <h2 class="sub-title">portfolio</h2>
+          </div>
+        </div>
+      </section>
+      <section data-anchor="Page 3" id="page-3" class="pg-page skills">
+        <div class="page">
+          <div class="page-mid">
+            <article class="skill-card">
+              <h4>html5 & css3</h4>
+              <ul>
+                <li>
+                  피고, 위하여 불어 낙원을 관현악이며, 거친 것은 칼이다. 싸인
+                  목숨을 일월과 평화스러운 아니다.
+                </li>
+                <li>
+                  청춘의 가는 천하를 끝까지 풍부하게 위하여 웅대한 속에 것이다.
+                  피에 긴지라 그림자는 가는 우리의 미인을 두손을 가는 그것을
+                  때문이다. 소담스러운 풀밭에 평화스러운 옷을 바로 무엇을 능히
+                  길을 밝은 칼이다.
+                </li>
+              </ul>
+            </article>
+            <article class="skill-card">
+              <h4>javascript(es6)</h4>
+              <ul>
+                <li>
+                  가는 얼음이 가장 꽃 그것을 같은 무엇을 쓸쓸하랴? 듣기만
+                  용감하고 무엇을 있는 만물은 방황하였으며, 우리는 사라지지
+                  이것이다. 천지는 무엇을 방황하였으며, 청춘 것은 교향악이다.
+                  같지 청춘 행복스럽고 사막이다. 이상은 위하여서, 더운지라 때에,
+                  용기가 위하여, 황금시대다.
+                </li>
+                <li>
+                  봄날의 가지에 방황하였으며, 별과 미묘한 것이다. 인간의 시들어
+                  밝은 무엇을 낙원을 주는 능히 힘있다.
+                </li>
+                <li>
+                  온갖 방황하여도, 열락의 역사를 인도하겠다는 넣는 힘차게 피가
+                  그들은 것이다. 들어 인간은 대고, 이상은 운다. 청춘의 것이
+                  끝까지 위하여, 끝에 이상의 불어 인생의 하는 것이다.
+                </li>
+                <li>
+                  원대하고, 있음으로써 커다란 얼마나 주는 보라. 오직 구하기 것은
+                  옷을 우리의 있으랴?
+                </li>
+              </ul>
+            </article>
+            <article class="skill-card">
+              <h4>figma</h4>
+              <ul>
+                <li>
+                  창공에 예가 동산에는 이는 아니다. 봄바람을 찾아 사람은 천지는
+                  대중을 뜨거운지라, 아니한 것이다.
+                </li>
+              </ul>
+            </article>
+            <article class="skill-card">
+              <h4>git & github</h4>
+              <ul>
+                <li>
+                  창공에 예가 동산에는 이는 아니다. 봄바람을 찾아 사람은 천지는
+                  대중을 뜨거운지라, 아니한 것이다.
+                </li>
+              </ul>
+            </article>
+          </div>
+          <div class="page-right">
+            <h2 class="sub-title">skills</h2>
+          </div>
+        </div>
+      </section>
+      <section data-anchor="Page 4" id="page-4" class="pg-page contact">
+        <div class="page">
+          <div class="page-mid">
+            <div class="contact-bg"></div>
+            <div class="contant-link">
+              <a href="#" class="contact-a a-mail">999azmo@gmail.com</a>
+              <a href="#" class="contact-a a-git">999azmo@github.com</a>
+            </div>
+          </div>
+          <div class="page-right">
+            <h2 class="sub-title">contact</h2>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="animation-wrapper">
+      <div class="particle particle-1"></div>
+      <div class="particle particle-2"></div>
+      <div class="particle particle-3"></div>
+      <div class="particle particle-4"></div>
+    </div>
+
+    <script src="https://unpkg.com/pageable@latest/dist/pageable.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
