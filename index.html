@@ -20,11 +20,14 @@
     <link rel="stylesheet" href="./style/index.css" />
   </head>
   <body>
-    <h1><a href="#">portfolio</a></h1>
-    <!-- go-up -->
-    <div class="top" onclick="pageable.scrollToPage(1)">
-      <span class="material-symbols-rounded"> expand_less </span>
+    <div class="animation-wrapper bg">
+      <div class="particle particle-1"></div>
+      <div class="particle particle-2"></div>
+      <div class="particle particle-3"></div>
+      <div class="particle particle-4"></div>
     </div>
+    <h1><a href="#">portfolio</a></h1>
+
     <div id="container">
       <section data-anchor="Page 1" id="page-1" class="pg-page title">
         <h2 class="main-title">portfolio</h2>
@@ -33,11 +36,7 @@
         <div class="page">
           <div class="page-mid">
             <article class="view"></article>
-            <ul class="view-link">
-              <li><a href="#">포트폴리오1</a></li>
-              <li><a href="#">포트폴리오2</a></li>
-              <li><a href="#">포트폴리오3</a></li>
-            </ul>
+            <ul class="view-link"></ul>
           </div>
           <div class="page-right">
             <h2 class="sub-title">portfolio</h2>
@@ -116,25 +115,24 @@
           <div class="page-mid">
             <div class="contact-bg"></div>
             <div class="contant-link">
-              <a href="#" class="contact-a a-mail">999azmo@gmail.com</a>
               <a href="#" class="contact-a a-git">999azmo@github.com</a>
+              <a href="#" class="contact-a a-mail">999azmo@gmail.com</a>
             </div>
           </div>
           <div class="page-right">
             <h2 class="sub-title">contact</h2>
           </div>
         </div>
+        <!-- go-up -->
+        <div class="top" onclick="pageable.scrollToPage(1)">
+          <span class="material-symbols-rounded"> expand_less </span>
+        </div>
       </section>
     </div>
 
-    <div class="animation-wrapper">
-      <div class="particle particle-1"></div>
-      <div class="particle particle-2"></div>
-      <div class="particle particle-3"></div>
-      <div class="particle particle-4"></div>
-    </div>
+    <div class="cursor"></div>
 
     <script src="https://unpkg.com/pageable@latest/dist/pageable.min.js"></script>
-    <script src="./js/index.js"></script>
+    <script defer src="./js/index.js"></script>
   </body>
 </html>
