@@ -100,6 +100,8 @@ section {
         border: 2px solid #ddd;
         width: 50vw;
         height: 28.1vw;
+        background: url(https://via.placeholder.com/960x540/497174/fff?text=click.png)
+          no-repeat center / cover;
       }
       .view-link {
         li {
@@ -148,7 +150,7 @@ section {
         ::before {
           position: fixed;
           content: "";
-          box-shadow: 0 0 100px 40px #ffffff08;
+          box-shadow: 0 0 100px 40px #ffffff10;
           top: -10%;
           left: -100%;
           transform: rotate(-45deg);

@@ -60,7 +60,7 @@ function changeMore() {
   const preview = document.querySelector(".view");
   for (let i = 0; i < more.length; i++) {
     more[i].addEventListener("mouseover", () => {
-      preview.style.background = `url(${viewList[i].src}) no-repeat center`;
+      preview.style.background = `url(${viewList[i].src}) no-repeat center/cover`;
       more[i].innerText = `MORE`;
     });
   }

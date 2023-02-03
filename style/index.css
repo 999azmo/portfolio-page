@@ -85,6 +85,7 @@ section .page .page-mid {
   border: 2px solid #ddd;
   width: 50vw;
   height: 28.1vw;
+  background: url(https://via.placeholder.com/960x540/497174/fff?text=click.png) no-repeat center/cover;
 }
 .portfolio .page .page-mid .view-link li {
   padding: 10px;
@@ -125,7 +126,7 @@ section .page .page-mid {
 .skills .page .page-mid .skill-card ::before {
   position: fixed;
   content: "";
-  box-shadow: 0 0 100px 40px rgba(255, 255, 255, 0.031372549);
+  box-shadow: 0 0 100px 40px rgba(255, 255, 255, 0.062745098);
   top: -10%;
   left: -100%;
   transform: rotate(-45deg);
