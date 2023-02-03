@@ -110,26 +110,36 @@ section .page .page-mid {
 }
 .skills .page .page-mid .skill-card {
   text-transform: uppercase;
-  border: 1px solid #fff;
   border-radius: 20px;
-  background-color: #fff;
-  color: #000;
   padding: 30px 50px;
   position: relative;
   line-height: 1.6;
   z-index: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 0 25px 23px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  overflow: hidden;
 }
-.skills .page .page-mid .skill-card::before {
+.skills .page .page-mid .skill-card ::before {
+  position: fixed;
   content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  border-radius: 20px 0 0 0;
-  border-top: 40px solid #000;
-  border-left: 160px solid #000;
-  border-right: 160px solid transparent;
-  border-bottom: 40px solid transparent;
+  box-shadow: 0 0 100px 40px rgba(255, 255, 255, 0.031372549);
+  top: -10%;
+  left: -100%;
+  transform: rotate(-45deg);
+  height: 60rem;
+  transition: 0.7s all;
+}
+.skills .page .page-mid .skill-card:hover {
+  border: 1px solid rgba(255, 255, 255, 0.2666666667);
+  box-shadow: 0 7px 50px 10px rgba(0, 0, 0, 0.6666666667);
+}
+.skills .page .page-mid .skill-card:hover ::before {
+  filter: brightness(0.5);
+  top: -100%;
+  left: 200%;
 }
 .skills .page .page-mid .skill-card h4 {
   position: relative;
@@ -143,6 +153,9 @@ section .page .page-mid {
 }
 .skills .page .page-mid .skill-card ul {
   list-style: disc;
+}
+.skills .page .page-mid .skill-card ul li {
+  padding-bottom: 10px;
 }
 
 .contact {
