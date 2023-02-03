@@ -42,7 +42,7 @@ const viewList = [
   {
     name: "포트폴리오3",
     link: "#",
-    src: "../images/open-graph.png",
+    src: "./images/open-graph.png",
   },
   {
     name: "포트폴리오4",
@@ -60,7 +60,7 @@ function changeMore() {
   const preview = document.querySelector(".view");
   for (let i = 0; i < more.length; i++) {
     more[i].addEventListener("mouseover", () => {
-      preview.style.background = `url(${viewList[i].src}) center`;
+      preview.style.background = `url(${viewList[i].src}) no-repeat center`;
       more[i].innerText = `MORE`;
     });
   }
