@@ -136,7 +136,7 @@ section .page .page-mid {
   top: -10%;
   left: -100%;
   transform: rotate(-45deg);
-  height: 60rem;
+  height: 80rem;
   transition: 0.7s all;
 }
 .skills .page .page-mid .skill-card:hover {
