@@ -94,7 +94,7 @@ section .page .page-mid {
   padding: 10px;
   text-align: center;
   font-size: 20px;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 .portfolio .page .page-mid .view-link li a:hover {
   outline: 1px solid #ffc01d;
@@ -105,7 +105,7 @@ section .page .page-mid {
 .skills .page .page-mid {
   margin: 0 50px;
   display: grid;
-  grid-template: 1fr 1fr/1fr 1fr;
+  grid-template: 3fr 2fr/1fr 1fr;
   gap: 2vw;
 }
 .skills .page .page-mid .skill-card {
@@ -117,13 +117,14 @@ section .page .page-mid {
   padding: 30px 50px;
   position: relative;
   line-height: 1.6;
+  z-index: 1;
 }
 .skills .page .page-mid .skill-card::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 400;
+  z-index: 1;
   border-radius: 20px 0 0 0;
   border-top: 40px solid #000;
   border-left: 160px solid #000;

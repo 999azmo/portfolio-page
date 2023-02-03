@@ -32,20 +32,22 @@ const viewList = [
   {
     name: "포트폴리오1",
     link: "#",
-    src: "../images/Charco - Launch.png",
-    alt: "preview1",
+    src: "https://via.placeholder.com/960x540/497174/fff.png",
   },
   {
     name: "포트폴리오2",
     link: "#",
-    src: "../images/Hands - Lightbulb.png",
-    alt: "preview2",
+    src: "https://via.placeholder.com/960x540/EB6440/fff?text=portfolio2.png",
   },
   {
     name: "포트폴리오3",
     link: "#",
-    src: "../images/Miroodles - Color Comp.png",
-    alt: "preview3",
+    src: "../images/open-graph.png",
+  },
+  {
+    name: "포트폴리오4",
+    link: "#",
+    src: "https://via.placeholder.com/960x540/D6E4E5/000?text=portfolio4.png",
   },
 ];
 
@@ -58,7 +60,7 @@ function changeMore() {
   const preview = document.querySelector(".view");
   for (let i = 0; i < more.length; i++) {
     more[i].addEventListener("mouseover", () => {
-      preview.innerHTML = `<img src="${viewList[i].src}" alt="${viewList[i].alt}">`;
+      preview.style.background = `url(${viewList[i].src}) center`;
       more[i].innerText = `MORE`;
     });
   }
@@ -76,12 +78,19 @@ function contactOver() {
   const moon = document.querySelector(".contact-bg");
   const over = document.querySelectorAll(".contact-a");
 
+  for (let i = 0; i < over.length; i++) {
+    over[i].addEventListener("mouseover", () => {
+      moon.style.transition = `1s`;
+    });
+  }
+
   over[0].addEventListener("mouseover", () => {
     moon.style.boxShadow = `inset 0 0 50px #fff, inset 20px 0 60px #0081B4,
     inset -20px 0 60px #EFA3C8, inset 20px 0 300px #0081B4,
     inset -20px 0 300px #EFA3C8, 0 0 50px #fff, -10px 0 60px #0081B4,
     10px 0 60px #EFA3C8`;
   });
+
   over[1].addEventListener("mouseover", () => {
     over[0].style.opacity = `.4`;
     over[1].style.opacity = `1`;
@@ -90,6 +99,7 @@ function contactOver() {
     inset -20px 0 300px #8e8e8e, 0 0 50px #fff, -10px 0 60px #EFA3C8,
     10px 0 60px #0081B4`;
   });
+
   for (let i = 0; i < over.length; i++) {
     over[i].addEventListener("mouseout", () => {
       over[0].style.opacity = ``;
