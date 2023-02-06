@@ -30,29 +30,27 @@ circleCursor();
 const links = document.querySelector(".view-link");
 const viewList = [
   {
-    name: "포트폴리오1",
-    link: "#",
-    src: "https://via.placeholder.com/960x540/497174/fff.png",
-  },
-  {
-    name: "포트폴리오2",
     link: "#",
     src: "https://via.placeholder.com/960x540/EB6440/fff?text=portfolio2.png",
   },
   {
-    name: "포트폴리오3",
     link: "#",
     src: "./images/open-graph.png",
   },
   {
-    name: "포트폴리오4",
     link: "#",
     src: "https://via.placeholder.com/960x540/D6E4E5/000?text=portfolio4.png",
   },
+  {
+    link: "https://mysterious-dinosaur-a2b.notion.site/PORTFOLIO-1-84886c403b4f4e128657e54fa55511a4",
+    src: "./images/pf1.png",
+  },
 ];
 
-viewList.forEach((item) => {
-  links.innerHTML += `<li><a href="${item.link}" class="more-link">${item.name}</a></li>`;
+viewList.forEach((item, idx) => {
+  links.innerHTML += `<li><a href="${item.link}" class="more-link">포트폴리오 ${
+    idx + 1
+  }</a></li>`;
 });
 
 function changeMore() {
@@ -67,7 +65,7 @@ function changeMore() {
 
   for (let i = 0; i < more.length; i++) {
     more[i].addEventListener("mouseout", () => {
-      more[i].innerText = `${viewList[i].name}`;
+      more[i].innerText = `포트폴리오 ${i + 1}`;
     });
   }
 }
