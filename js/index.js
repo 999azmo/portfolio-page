@@ -30,20 +30,24 @@ circleCursor();
 const links = document.querySelector(".view-link");
 const viewList = [
   {
+    name: "메타토이드래곤즈",
+    link: "https://mysterious-dinosaur-a2b.notion.site/84886c403b4f4e128657e54fa55511a4",
+    src: "./images/pf1.png",
+  },
+  {
+    name: "포트폴리오",
     link: "#",
     src: "https://via.placeholder.com/960x540/EB6440/fff?text=portfolio2.png",
   },
   {
+    name: "포트폴리오",
     link: "#",
     src: "./images/open-graph.png",
   },
   {
+    name: "포트폴리오",
     link: "#",
     src: "https://via.placeholder.com/960x540/D6E4E5/000?text=portfolio4.png",
-  },
-  {
-    link: "https://mysterious-dinosaur-a2b.notion.site/PORTFOLIO-1-84886c403b4f4e128657e54fa55511a4",
-    src: "./images/pf1.png",
   },
 ];
 
