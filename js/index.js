@@ -1,5 +1,5 @@
 // pageable
-let pageable = new Pageable("#container");
+const pageable = new Pageable("#container");
 
 // 네비바에 이름 추가
 (function pageName() {
@@ -36,7 +36,7 @@ const viewList = [
   },
   {
     name: "포트폴리오",
-    link: "#",
+    link: "https://mysterious-dinosaur-a2b.notion.site/PORTFOLIO-2-82b31c46a68b47a0aad9990f5f307650",
     src: "https://via.placeholder.com/960x540/EB6440/fff?text=portfolio2.png",
   },
   {
@@ -52,9 +52,9 @@ const viewList = [
 ];
 
 viewList.forEach((item, idx) => {
-  links.innerHTML += `<li><a href="${item.link}" class="more-link">포트폴리오 ${
-    idx + 1
-  }</a></li>`;
+  links.innerHTML += `<li><a href="${
+    item.link
+  }" target="_blank" class="more-link">포트폴리오 ${idx + 1}</a></li>`;
 });
 
 function changeMore() {
