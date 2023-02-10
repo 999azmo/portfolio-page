@@ -60,13 +60,17 @@ viewList.forEach((item, idx) => {
 function changeMore() {
   const more = links.querySelectorAll(".more-link");
   const preview = document.querySelector(".view");
+
+  // default
+  preview.style.background = `url(${viewList[0].src}) no-repeat center/cover`;
+
+  // change
   for (let i = 0; i < more.length; i++) {
     more[i].addEventListener("mouseover", () => {
       preview.style.background = `url(${viewList[i].src}) no-repeat center/cover`;
       more[i].innerText = `MORE`;
     });
   }
-
   for (let i = 0; i < more.length; i++) {
     more[i].addEventListener("mouseout", () => {
       more[i].innerText = `포트폴리오 ${i + 1}`;

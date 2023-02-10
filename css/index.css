@@ -91,7 +91,6 @@ section .page .page-mid {
   border: 2px solid #ddd;
   width: 50vw;
   height: 28.1vw;
-  background: url(https://via.placeholder.com/960x540/497174/fff?text=click.png) no-repeat center/cover;
 }
 .portfolio .page .page-mid .view-link li {
   padding: 10px;
