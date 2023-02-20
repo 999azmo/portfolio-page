@@ -35,14 +35,14 @@ const viewList = [
     src: "./images/open-graph.png",
   },
   {
+    name: "포트폴리오",
+    link: "https://mysterious-dinosaur-a2b.notion.site/NUENO-digital-fashion-16d3d0d9df9e4de2b1afa2497d4505c5",
+    src: "./images/pf2.jpg",
+  },
+  {
     name: "메타토이드래곤즈",
     link: "https://mysterious-dinosaur-a2b.notion.site/84886c403b4f4e128657e54fa55511a4",
     src: "./images/pf1.png",
-  },
-  {
-    name: "포트폴리오",
-    link: "https://mysterious-dinosaur-a2b.notion.site/PORTFOLIO-2-82b31c46a68b47a0aad9990f5f307650",
-    src: "https://via.placeholder.com/960x540/EB6440/fff?text=portfolio2.png",
   },
   {
     name: "포트폴리오",
