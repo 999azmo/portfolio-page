@@ -12,20 +12,6 @@ const pageable = new Pageable("#container");
   }
 })();
 
-// cursor
-function circleCursor() {
-  const cursor = document.querySelector(".cursor");
-
-  document.addEventListener("DOMContentLoaded", () => {
-    document.body.onmousemove = function (e) {
-      cursor.style.left = `${e.clientX}px`;
-      cursor.style.top = `${e.clientY}px`;
-      // cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-    };
-  });
-}
-circleCursor();
-
 // 포트폴리오 목록 생성, 미리보기
 const links = document.querySelector(".view-link");
 const viewList = [
