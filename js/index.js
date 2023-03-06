@@ -16,12 +16,12 @@ const pageable = new Pageable("#container");
 const links = document.querySelector(".view-link");
 const viewList = [
   {
-    name: "포트폴리오",
+    name: "portfolio-page",
     link: "https://mysterious-dinosaur-a2b.notion.site/PORTFOLIO-page-6628acc2c1dc436da33546cdc6c4b242",
     src: "./images/open-graph.png",
   },
   {
-    name: "포트폴리오",
+    name: "nuenofashion",
     link: "https://mysterious-dinosaur-a2b.notion.site/NUENO-digital-fashion-16d3d0d9df9e4de2b1afa2497d4505c5",
     src: "./images/pf2.jpg",
   },
@@ -31,16 +31,14 @@ const viewList = [
     src: "./images/pf1.png",
   },
   {
-    name: "포트폴리오",
+    name: "COMING SOON",
     link: "#",
-    src: "https://via.placeholder.com/960x540/D6E4E5/000?text=portfolio4.png",
+    src: "https://via.placeholder.com/960x540/D6E4E5/000?text=COMING-SOON...",
   },
 ];
 
 viewList.forEach((item, idx) => {
-  links.innerHTML += `<li><a href="${
-    item.link
-  }" target="_blank" class="more-link">포트폴리오 ${idx + 1}</a></li>`;
+  links.innerHTML += `<li><a href="${item.link}" target="_blank" class="more-link">${item.name}</a></li>`;
 });
 
 function changeMore() {
@@ -55,11 +53,13 @@ function changeMore() {
     more[i].addEventListener("mouseover", () => {
       preview.style.background = `url(${viewList[i].src}) no-repeat center/cover`;
       more[i].innerText = `MORE`;
+      more[i].style.textAlign = `center`;
     });
   }
   for (let i = 0; i < more.length; i++) {
     more[i].addEventListener("mouseout", () => {
-      more[i].innerText = `포트폴리오 ${i + 1}`;
+      more[i].innerText = `${viewList[i].name}`;
+      more[i].style.textAlign = ``;
     });
   }
 }
